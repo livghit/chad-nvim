@@ -12,7 +12,8 @@ local servers = {
   "astro",
   "ts_ls",
   "volar",
-  "lua_ls"
+  "lua_ls",
+  "tailwindcss"
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
