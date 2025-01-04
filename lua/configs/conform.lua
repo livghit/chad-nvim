@@ -1,7 +1,8 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    php = { "pint","intelephense" },
+    php = { "pint", "intelephense" },
+    ocaml = { "ocamlformat" },
   },
 
   -- format_on_save = {

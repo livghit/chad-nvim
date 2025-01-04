@@ -13,7 +13,8 @@ local servers = {
   "ts_ls",
   "volar",
   "lua_ls",
-  "tailwindcss"
+  "tailwindcss",
+  "ocamllsp"
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
