@@ -3,6 +3,7 @@ local options = {
     lua = { "stylua" },
     php = { "pint", "intelephense" },
     ocaml = { "ocamlformat" },
+    blade = {"blade-formatter"}
   },
 
   -- format_on_save = {

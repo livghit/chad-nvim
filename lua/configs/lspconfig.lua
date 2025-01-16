@@ -8,6 +8,7 @@ local servers = {
   "html",
   "cssls",
   "intelephense",
+  "elixirls",
   "jsonls",
   "astro",
   "ts_ls",
@@ -26,7 +27,11 @@ for _, lsp in ipairs(servers) do
     capabilities = nvlsp.capabilities,
   }
 end
-
+require 'lspconfig'.gleam.setup {
+  capabilities = nvlsp.capabilities,
+  on_init = nvlsp.on_init,
+  on_attach = nvlsp.on_attach,
+}
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
 --   on_attach = nvlsp.on_attach,
